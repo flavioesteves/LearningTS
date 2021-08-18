@@ -12,3 +12,4 @@
 * 12 - TypeScript Types vs JavaScript Types
 * 13 - Important: Type Casing
 * 14 - Working with Numbers, Strings & Booleans
+* 15 - Type Assignment & Type Inference
