@@ -13,3 +13,8 @@
 * 13 - Important: Type Casing
 * 14 - Working with Numbers, Strings & Booleans
 * 15 - Type Assignment & Type Inference
+* 16 - Obejct Types
+* 17 - Nested Objects & types
+* 18 - Array Types
+* 19 - Working with Tuples
+* 20 - Working with Enums
