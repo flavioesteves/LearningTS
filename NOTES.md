@@ -14,7 +14,7 @@
   - object {age:30} - Any JavaScript object, more specific types (type of object) are possible
   - Array ([1,2,3]) - Any Javascript array, type can be flexible or strict (regarding the lements types)
   - Tuple ([1, 'Hello'])- Added by TypeScript: fixed-length array
-  - Enum - enum ({New, Old}) - Added by TypeScript: Automatically enumerated global constant identifiers
+  - Enum - enum ({New, Old}) - Added by TypeScript: Automatically enumerated global constant identifiers.
 - 10 - Module Introduction
 - 11 - Using Types
 - 12 - TypeScript Types vs JavaScript Types
