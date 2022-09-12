@@ -5,6 +5,8 @@
  * 
  * 19 - Working with Tuples
  * NEW Type: Tuple -> Added to TypeScript: Fixed-length array and fixed type
+ *
+ * 21 - The any Type
  */
 
 
@@ -34,9 +36,13 @@ const person19: {
 //person18.role.push('admin'); // TypeScript can't catch this as an error
 //person18.role[1] = 10;
 
+//L18
+//let favoriteActivities: string[];
 
-let favoriteActivities: string[];
+//L21
+let favoriteActivities: any[];
 favoriteActivities = ['Sports'];
+
 
 console.log(person19.name);
 

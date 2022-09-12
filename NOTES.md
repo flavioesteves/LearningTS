@@ -33,4 +33,6 @@
 18. Array Types
 19. Working with Tuples
 20. Working with Enums
-21. The "any" Type 
+21. The "any" Type
+    * Avoid use the "any", because will be nullify the advantages of Typescript
+22. Union Types
