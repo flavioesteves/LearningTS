@@ -30,12 +30,12 @@ var product = {
     }
 };
 // This would be the type of such an object:
-var productObjTypes = {
+ productObjTypes = {
     id: "abc1",
     price: 12.99,
     tags: ["great-offer", "hot-and-new"],
     details: {
-        title: "Red Carpet",
+        title: "Red Carpet"
         description: "A great carpet - almost brand-new!"
     }
 };

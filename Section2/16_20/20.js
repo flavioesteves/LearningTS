@@ -13,6 +13,13 @@ var Role;
     Role[Role["AUTHOR"] = 2] = "AUTHOR";
 })(Role || (Role = {}));
 ;
+var ExampleStarterNotZero;
+(function (ExampleStarterNotZero) {
+    ExampleStarterNotZero[ExampleStarterNotZero["ADMIN"] = 5] = "ADMIN";
+    ExampleStarterNotZero[ExampleStarterNotZero["READ_ONLY"] = 6] = "READ_ONLY";
+    ExampleStarterNotZero["AUTHOR"] = "AUTHOR";
+})(ExampleStarterNotZero || (ExampleStarterNotZero = {}));
+; // can be used with any value
 var person20 = {
     name: "Mac20",
     age: 66,
