@@ -1,5 +1,4 @@
 # Section 1: Getting Started
-
 01. Introduction
 02. Introduction
 03. Introduction
@@ -12,7 +11,6 @@
 
 
 # Section 2: TypeScript Basics & Basic Types
-
 * Core Types:
   - number (1,5.3,-10) - All numbers, no differentiation between integers or floats
   - string ('Hello', "Hello", `Hello`) - All text values
@@ -36,3 +34,9 @@
 21. The "any" Type
     * Avoid use the "any", because will be nullify the advantages of Typescript
 22. Union Types
+    * The special char to union is '|'. Example: (input: number | string)
+23. Literal Types
+    * Example: resultConversion: 'as-number' | 'as-text'
+24. Type Aliases / Custom Types
+25. Type Aliases & Object Types    
+26. Function Return Types & "void"

@@ -20,5 +20,8 @@
   "devDependencies": {
     "lite-server": "^2.6.1",
     "typescript": "^4.2.4"
-  }
+  },
+"scripts:"{
+    "start": "live-server--open=./Section2/"
+    }
 }
