@@ -40,3 +40,11 @@
 24. Type Aliases / Custom Types
 25. Type Aliases & Object Types    
 26. Function Return Types & "void"
+    * Return type syntax: function name(param: type):("--> Return type") type {}
+    * Void and Undefined as return type
+27. Functions as Types
+    * Function types syntax: let variableName: (param: type) => type
+28. Functions Types & Callbacks
+29. The "unknown" Type
+    * "unknown" is a type that can be used when don't know what type will be stored, more resctrictive then "Any"
+30. The "never" type
