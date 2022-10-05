@@ -74,7 +74,7 @@
     * "allowJs", "checkJs" --> for vanilla JavaScript
     * "declarion", "declarionMap" --> for export as a library
 40. Working with Source Maps
-    * Works for debugging so in the browser devtools can be found the .ts files in the source tab. 
+    * "sourceMap:" Works for debugging so in the browser devtools can be found the .ts files in the source tab. 
     * Create a new file ".js.map"
 41. rootDir and outDir
     * Good practices, a folder "dist" for all .js files, and a folder "src" for the .ts files
@@ -96,3 +96,20 @@
     * tsconfig Docs: [https://www.typescriptlang.org/docs/handbook/tsconfig-json.html](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)
     * Compiler Config Docs: [https://www.typescriptlang.org/docs/handbook/compiler-options.html](https://www.typescriptlang.org/docs/handbook/compiler-options.html)
     * VS Code TS Debugging: [https://code.visualstudio.com/docs/typescript/typescript-debugging](https://code.visualstudio.com/docs/typescript/typescript-debugging)
+
+# Section 4: Next-generation Javascript & Typescript
+48. Module Introduction
+49. "let" and "const"
+    * Compatibility table [https://kangax.github.io/](https://kangax.github.io/)
+50. Arrow Functions
+51. Default Function Parameters
+    * Example function add(a:number; b:number = 1): "b:number = 1". 1 is the default value when called the function without the 2nd Parameter.
+    * Default values parameters needs to be declared in the last positions, because default arguments are not skipped
+    * (non-default parameters, default parameters)
+52. The Spread Operator (...)
+53. Rest Parameters
+54. Array & Object Desctructuring
+55. How Code Gets Compiled & Wrap Up
+56. Useful Resources & Links
+
+# Section 5:Classes & Interfaces
