@@ -113,3 +113,28 @@
 56. Useful Resources & Links
 
 # Section 5:Classes & Interfaces
+57. Module Introduction
+58. What are Classes?
+    * OOP
+    * Example: 
+    - ProductList --> Renders a list of products which were fetched from a server (database) --> Object holds rendering + fetching logic
+    - Product --> Renders details about a product and allows addition to cart --> Object holds rendering + cart adding logic
+    - ShoppingCart --> Renders cart products and total and allows user to order them --> Object holds rendering + ordering (server commmunication) logic
+    * Objects: "The things you work with in code", Instances of classes (=based on classes), Class-based creation is an alternative to using object literals!
+    * Classes: "Blueprints for objects" (theoretical definition), Define how objects look like, which properties and methods they have, Classes make creation of multiple similar       objects much easier
+59. Creating a First Class
+60. Compiling to Javascript
+    * Difference ES5 to ES6
+61. Constructor Functions & the "this" Keyword
+62. "private" and "public" Access Modifiers
+    * Modifiers: Public, Private
+    * Default is Public
+    * Beside properties, you can also mark methods as "private"
+63. Shorthand Initialization
+64. "readonly" Properties
+65. Inheritance
+    * "super" to access the parent class. In this case the constructor.
+66. Overriding Properties & the "protected" Modifier
+    * protected is like private but can accessible by the inherented classes
+67. Getters & Setters
+  
