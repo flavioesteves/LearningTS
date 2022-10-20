@@ -137,4 +137,13 @@
 66. Overriding Properties & the "protected" Modifier
     * protected is like private but can accessible by the inherented classes
 67. Getters & Setters
-  
+    * Getters & Setters are accessable as a property and not as a function call.
+    * Getter: get keyword. Example: get nameOfTheGetter () {return something}
+      - Access: class.nameOfTheGetter
+    * Setter: set keyword. Example: set nameOfTheSetter(newValue: type){}
+      - Access: class.nameOfTheSetter = newValue
+68. Static Methods & Properties
+    * static keyword 
+69. Abstract Classes
+    * abstract keyword: used in class and methods
+70. Singletons & Private Constructors
