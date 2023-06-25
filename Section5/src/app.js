@@ -1,9 +1,9 @@
-"use strict";
-class Department {
-    constructor(n) {
-        this.name = n;
+//Lesson 72
+var user1;
+user1 = {
+    name: "Mac", age: 20,
+    greet: function (phrase) {
+        console.log(phrase + " " + this.name);
     }
-}
-const accounting = new Department('Accounting');
-console.log(accounting);
-//# sourceMappingURL=app.js.map
+};
+user1.greet("Hi there - I am");
