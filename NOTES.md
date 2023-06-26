@@ -151,3 +151,25 @@
 72. A First Interface
 73. Using Interfaces with Classes
 74. Why Interfaces?
+75. Readonly Interface Properties
+76. Extending Interfaces
+77. Interfaces as Function Types
+78. Optional Parameters & Properties
+79. Compiling Interfaces to JavaScript
+80. Wrap Up
+81. Useful Resources & Links
+    * [More on (JS) Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
+    * [More on TS Interfaces](https://www.typescriptlang.org/docs/handbook/2/objects.html)
+
+
+# Section 6:Advanced Types
+
+82. Module Introduction
+    - Intersection Types
+    - Type Guards
+    - Discriminated Unions
+    - Type Casting
+    - Function Overloads
+83. Intersection Types
+84. More on TYpe Guards
+
