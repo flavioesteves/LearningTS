@@ -171,5 +171,5 @@
     - Type Casting
     - Function Overloads
 83. Intersection Types
-84. More on TYpe Guards
+84. More on Type Guards
 
