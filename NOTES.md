@@ -172,4 +172,11 @@
     - Function Overloads
 83. Intersection Types
 84. More on Type Guards
-
+85. Discriminated Union
+86. Type Casting
+87. Index Properties
+88. Function Overloads
+89. Optional Chaining
+90. Nullish Coalescing
+91. Wrap Up
+92. Useful Resources & Links
