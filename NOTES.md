@@ -183,3 +183,9 @@
 # Section 7:Generics
 93. Module Introduction
 94. Built-in Generics & What are Generics?
+95. Creating a Generic Function
+96. Working with Constraints
+97. Another Genericc Function
+98. The "keyof" Constraint
+99.  Generic Classes
+100. First Summary
