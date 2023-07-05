@@ -163,7 +163,6 @@
 
 
 # Section 6:Advanced Types
-
 82. Module Introduction
     - Intersection Types
     - Type Guards
@@ -180,3 +179,7 @@
 90. Nullish Coalescing
 91. Wrap Up
 92. Useful Resources & Links
+
+# Section 7:Generics
+93. Module Introduction
+94. Built-in Generics & What are Generics?
