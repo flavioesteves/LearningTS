@@ -75,4 +75,5 @@ objStorage.addItem({ name: "Manu" });
 objStorage.removeItem({ name: "Mac" });
 console.log(objStorage.getItems());
 */
+//101 - Generic Utility Types
 //# sourceMappingURL=app.js.map

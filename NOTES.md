@@ -189,3 +189,4 @@
 98. The "keyof" Constraint
 99.  Generic Classes
 100. First Summary
+101. Generic Utility Types
