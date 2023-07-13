@@ -190,3 +190,9 @@
 99.  Generic Classes
 100. First Summary
 101. Generic Utility Types
+102. Generic Types vs Union Types
+103. Useful Resources & Links
+    * [Generics](https://www.typescriptlang.org/docs/handbook/generics.html)
+
+# Section 8: Decorators
+104. Module Introduction

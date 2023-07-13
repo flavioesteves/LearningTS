@@ -67,13 +67,15 @@ const numberStorage = new DataStorage();
 numberStorage.addItem(9);
 numberStorage.addItem(10);
 console.log(numberStorage);
-/*
-const objStorage = new DataStorage<object>();
-objStorage.addItem({ name: "Mac" });
-objStorage.addItem({ name: "Manu" });
-// ...
-objStorage.removeItem({ name: "Mac" });
-console.log(objStorage.getItems());
-*/
-//101 - Generic Utility Types
+function createCourseGoal(title, description, date) {
+    let courseGoal = {};
+    courseGoal.title = title;
+    courseGoal.description = description;
+    courseGoal.completeUntil = date;
+    return courseGoal;
+}
+//  Readonly
+const names = ["Mac", "Apple"];
+//names.push("Air"); In this case is not allowed since it is Readonly
+//102 - Generic Types vs Union Types
 //# sourceMappingURL=app.js.map
