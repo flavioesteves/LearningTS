@@ -197,3 +197,5 @@
 # Section 8: Decorators
 104. Module Introduction
     - Meta-Programming
+105. A First Class Decorator
+
