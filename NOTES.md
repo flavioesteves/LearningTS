@@ -198,4 +198,9 @@
 104. Module Introduction
     - Meta-Programming
 105. A First Class Decorator
-
+106. Working with Decorator Factories
+107. Building More Useful Decorators
+108. Adding Multiple Decorators
+109. Diving into Property Decorators
+110. ?
+111. When Do Decorators Execute?
