@@ -202,5 +202,5 @@
 107. Building More Useful Decorators
 108. Adding Multiple Decorators
 109. Diving into Property Decorators
-110. ?
+110. Accessor & Parameter Decorators
 111. When Do Decorators Execute?

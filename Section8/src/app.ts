@@ -100,14 +100,14 @@ function Log(target: any, propertyName: string | Symbol) {
   console.log(target, propertyName);
 }
 
+
+//110 - Accessor & Parameter Decorators
 function Log2(target: any, name: string, descriptor: PropertyDescriptor) {
   console.log("Accessor decorator!");
   console.log(target);
   console.log(name);
   console.log(descriptor);
-
 }
-
 
 function Log3(target: any, name: string | Symbol, descriptor: PropertyDescriptor) {
   console.log("Method decorator!");
@@ -147,3 +147,9 @@ class Product {
     return this._price * (1 + tax)
   }
 }
+
+
+//111 - When Do Decorators Execute?
+//Decorators runs when the class is defined not when is instancied
+const p1 = new Product("Book", 19);
+const p2 = new Product("Book2", 29);

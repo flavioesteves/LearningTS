@@ -94,6 +94,7 @@ function Log(target, propertyName) {
     console.log("Property Decorator");
     console.log(target, propertyName);
 }
+//110 - Accessor & Parameter Decorators
 function Log2(target, name, descriptor) {
     console.log("Accessor decorator!");
     console.log(target);
@@ -113,6 +114,10 @@ function Log4(target, name, position) {
     console.log(position);
 }
 class Product {
+    constructor(t, p) {
+        this.title = t;
+        this._price = p;
+    }
     set price(val) {
         if (val > 0) {
             this._price = val;
@@ -120,10 +125,6 @@ class Product {
         else {
             throw new Error("Invalid price - should be positive!");
         }
-    }
-    constructor(t, p) {
-        this.title = t;
-        this._price = p;
     }
     getPriceWithTax(tax) {
         return this._price * (1 + tax);
@@ -139,4 +140,8 @@ __decorate([
     Log3,
     __param(0, Log4)
 ], Product.prototype, "getPriceWithTax", null);
+//111 - When Do Decorators Execute?
+//Decorators runs when the class is defined not when is instancied
+const p1 = new Product("Book", 19);
+const p2 = new Product("Book2", 29);
 //# sourceMappingURL=app.js.map
