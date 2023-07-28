@@ -153,3 +153,50 @@ class Product {
 //Decorators runs when the class is defined not when is instancied
 const p1 = new Product("Book", 19);
 const p2 = new Product("Book2", 29);
+
+//112 - Returning (and changing) a Class in a class Decorator
+console.log("L112");
+function WithTemplate112(template: string, hookId: string) {
+  console.log("Template Factory");
+  return function <T extends { new(...args: any[]): { name: string } }>(originalConstructor: T) {
+    return class extends originalConstructor {
+      constructor(..._: any[]) {
+        super();
+        console.log("Rendering Template 2");
+
+        const hookEl = document.getElementById(hookId);
+        if (hookEl) {
+          hookEl.innerHTML = template;
+          hookEl.querySelector("h1")!.textContent = this.name;
+        }
+      }
+    }
+  };
+}
+
+@FactoryLogger("Logging")
+@WithTemplate112("<h1>My Person Object L112</h1>", "app")
+class Person112 {
+  name = "Person112";
+  constructor() {
+    console.log("Creating person L112 object");
+  }
+}
+const pers112 = new Person112();
+
+
+//113 - Other Decorator Return Types
+console.log("L113");
+function Log113_2(target: any, name: string, descriptor: PropertyDescriptor) {
+  console.log("Accessor decorator!");
+  console.log(target);
+  console.log(name);
+  console.log(descriptor);
+}
+
+function Log113_3(target: any, name: string | Symbol, descriptor: PropertyDescriptor) {
+  console.log("Method decorator!");
+  console.log(target);
+  console.log(name);
+  console.log(descriptor);
+}

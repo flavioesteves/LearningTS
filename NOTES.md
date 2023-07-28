@@ -204,3 +204,5 @@
 109. Diving into Property Decorators
 110. Accessor & Parameter Decorators
 111. When Do Decorators Execute?
+112. Returning (and changing) a Class in a Class Decorator
+113. Other Decorator Return Types
