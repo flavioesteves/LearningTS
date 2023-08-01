@@ -206,3 +206,14 @@
 111. When Do Decorators Execute?
 112. Returning (and changing) a Class in a Class Decorator
 113. Other Decorator Return Types
+114. Example: Creating an "Autobind" Decorator
+115. Validation with Decorators - First Steps
+116. Validation with Decorators - Finished
+117. Fixing a Validator Bug
+118. Wrap Up
+    - Example package Validator: typestack/class-validator
+    - Angular or Nestjs code is heavy in Decorators is a good source to see some implementation examples in production
+119. Useful Resources & Links
+    * [More on Decorators](https://www.typescriptlang.org/docs/handbook/decorators.html)
+
+# Section 9: Practice Time!Let's build a Drag & Drop Project
