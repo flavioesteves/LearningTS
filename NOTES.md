@@ -217,3 +217,6 @@
     * [More on Decorators](https://www.typescriptlang.org/docs/handbook/decorators.html)
 
 # Section 9: Practice Time!Let's build a Drag & Drop Project
+120. Module Introduction
+121. Getting Started
+122. DOM Element Selection & OOP Rendering
