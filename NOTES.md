@@ -220,3 +220,7 @@
 120. Module Introduction
 121. Getting Started
 122. DOM Element Selection & OOP Rendering
+123. Interacting with DOM Elements
+124. Creating & Using an "Autobind" Decorator
+125. Fetching User Input
+126. Creating a Re-Usable Validation Functionality
