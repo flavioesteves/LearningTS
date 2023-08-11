@@ -6,6 +6,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 console.log("Section 9 - Practice Time! Drag & Drop Project");
+console.log(" --- Interface ---");
+console.log("Validatable");
+//Validation Implementation
+function validate(validatableInput) {
+    let isValid = true;
+    if (validatableInput.required) {
+        isValid = isValid && validatableInput.value.toString().trim().length !== 0;
+    }
+    return isValid;
+}
 console.log(" --- Decorators ---");
 console.log("AutoBind");
 function autobind(_, _2, descriptor) {
@@ -38,10 +48,14 @@ class ProjectInput {
         const enteredTitle = this.titleInputElement.value;
         const enteredDescription = this.descriptionInputElement.value;
         const enteredPeople = this.peopleInputElement.value;
-        if (enteredPeople.trim().length === 0 || enteredDescription.trim().length === 0 || enteredTitle.trim().length === 0) {
-            alert("Invalid input try again!");
-            return;
-        }
+        //Validation future implementation
+        if (validate({ value: enteredTitle, required: true, minLength: 5 }) &&
+            validate({ value: enteredDescription, required: true, minLength: 5 }) &&
+            validate({ value: enteredPeople, required: true, minLength: 5 }))
+            if (enteredPeople.trim().length === 0 || enteredDescription.trim().length === 0 || enteredTitle.trim().length === 0) {
+                alert("Invalid input try again!");
+                return;
+            }
         return [enteredTitle, enteredDescription, +enteredPeople];
     }
     clearInputs() {
