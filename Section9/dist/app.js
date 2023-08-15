@@ -14,6 +14,18 @@ function validate(validatableInput) {
     if (validatableInput.required) {
         isValid = isValid && validatableInput.value.toString().trim().length !== 0;
     }
+    if (validatableInput.minLength !== undefined && typeof validatableInput.value === "string") {
+        isValid = isValid && validatableInput.value.length >= validatableInput.minLength;
+    }
+    if (validatableInput.maxLength !== undefined && typeof validatableInput.value === "string") {
+        isValid = isValid && validatableInput.value.length <= validatableInput.maxLength;
+    }
+    if (validatableInput.min != null && typeof validatableInput.value === "number") {
+        isValid = isValid && validatableInput.value >= validatableInput.min;
+    }
+    if (validatableInput.max != null && typeof validatableInput.value === "number") {
+        isValid = isValid && validatableInput.value <= validatableInput.max;
+    }
     return isValid;
 }
 console.log(" --- Decorators ---");
@@ -48,15 +60,29 @@ class ProjectInput {
         const enteredTitle = this.titleInputElement.value;
         const enteredDescription = this.descriptionInputElement.value;
         const enteredPeople = this.peopleInputElement.value;
-        //Validation future implementation
-        if (validate({ value: enteredTitle, required: true, minLength: 5 }) &&
-            validate({ value: enteredDescription, required: true, minLength: 5 }) &&
-            validate({ value: enteredPeople, required: true, minLength: 5 }))
-            if (enteredPeople.trim().length === 0 || enteredDescription.trim().length === 0 || enteredTitle.trim().length === 0) {
-                alert("Invalid input try again!");
-                return;
-            }
-        return [enteredTitle, enteredDescription, +enteredPeople];
+        const titleValidatable = {
+            value: enteredTitle,
+            required: true
+        };
+        const descriptionValidatable = {
+            value: enteredDescription,
+            required: true,
+            minLength: 5
+        };
+        const peopleValidatable = {
+            value: +enteredPeople,
+            required: true,
+            min: 1
+        };
+        if (!validate(titleValidatable) ||
+            !validate(descriptionValidatable) ||
+            !validate(peopleValidatable)) {
+            alert("Invalid input, plese try again!");
+            return;
+        }
+        else {
+            return [enteredTitle, enteredDescription, +enteredPeople];
+        }
     }
     clearInputs() {
         this.titleInputElement.value = "";
