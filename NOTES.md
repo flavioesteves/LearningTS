@@ -226,3 +226,6 @@
 126. Creating a Re-Usable Validation Functionality
 127. Rendering Project Lists
 128. Managing Application State with Singletons
+129. More Classes & Custom Types
+130. Filtering Projects with Enums
+131. Adding Inheritance & Generics

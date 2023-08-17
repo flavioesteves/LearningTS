@@ -7,6 +7,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 console.log("Section 9 - Practice Time! Drag & Drop Project");
 console.log(" --- Interface ---");
+console.log("Project");
+var ProjectStatus;
+(function (ProjectStatus) {
+    ProjectStatus[ProjectStatus["Active"] = 0] = "Active";
+    ProjectStatus[ProjectStatus["Finished"] = 1] = "Finished";
+})(ProjectStatus || (ProjectStatus = {}));
+class Project {
+    constructor(id, title, description, people, status) {
+        this.id = id;
+        this.title = title;
+        this.description = description;
+        this.people = people;
+        this.status = status;
+    }
+}
 //Project State Management
 class ProjectState {
     constructor() {
@@ -26,12 +41,7 @@ class ProjectState {
         this.listeners.push(listenerFn);
     }
     addProject(title, description, numOfPeople) {
-        const newProject = {
-            id: Math.random().toString(),
-            title: title,
-            description: description,
-            people: numOfPeople
-        };
+        const newProject = new Project(Math.random().toString(), title, description, numOfPeople, ProjectStatus.Active);
         this.projects.push(newProject);
         for (const listenerFn of this.listeners) {
             listenerFn(this.projects.slice());
@@ -85,7 +95,15 @@ class ProjectList {
         this.element = importedNode.firstElementChild;
         this.element.id = `${type}-projects`;
         projectState.addListener((projects) => {
-            this.assignedProjects = projects;
+            const relevantProjects = projects.filter(prj => {
+                if (this.type === "active") {
+                    return prj.status === ProjectStatus.Active;
+                }
+                else {
+                    return prj.status === ProjectStatus.Finished;
+                }
+            });
+            this.assignedProjects = relevantProjects;
             this.renderProjects();
         });
         this.attach();
@@ -93,6 +111,8 @@ class ProjectList {
     }
     renderProjects() {
         const listElement = document.getElementById(`${this.type}-projects-list`);
+        //ALERT this is wrong is rerender all the element instead of increment only the last one 
+        listElement.innerHTML = "";
         for (const prjItem of this.assignedProjects) {
             const listItem = document.createElement("li");
             listItem.textContent = prjItem.title;
