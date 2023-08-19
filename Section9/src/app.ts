@@ -19,9 +19,7 @@ class ProjectState {
   private projects: Project[] = [];
   private static instance: ProjectState;
 
-  private constructor() {
-
-  }
+  private constructor() { }
 
   static getInstance() {
     if (this.instance) {
@@ -102,6 +100,18 @@ function autobind(_: any, _2: string, descriptor: PropertyDescriptor) {
 }
 
 console.log(" --- Classes ---");
+console.log("Component");
+
+class Component {
+  templateElement: HTMLTemplateElement;
+  hostElement: HTMLDivElement;
+  element: HTMLElement;
+}
+
+
+
+
+
 console.log("ProjectList");
 class ProjectList {
   templateElement: HTMLTemplateElement;
