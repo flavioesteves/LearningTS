@@ -229,4 +229,5 @@
 129. More Classes & Custom Types
 130. Filtering Projects with Enums
 131. Adding Inheritance & Generics
+132. Rendering Project Items with a Class
 
