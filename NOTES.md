@@ -230,4 +230,13 @@
 130. Filtering Projects with Enums
 131. Adding Inheritance & Generics
 132. Rendering Project Items with a Class
+133. Using a Getter
+134. Utilizing Interfaces to Implement Drag & Drop
+135. Drag Events & Reflecting the Current State in the UI
+136. Adding a Droppable Area
+137. Finishing Drag & Drop
+138. Wrap Up
+139. Useful Resources & Links
+    * [More on Drag & Drop](https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API)
 
+# Section 10: Modules & Namespaces
