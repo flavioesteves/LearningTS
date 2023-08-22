@@ -240,3 +240,23 @@
     * [More on Drag & Drop](https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API)
 
 # Section 10: Modules & Namespaces
+140. Module Introduction
+141. Writing Module Code - Your Options
+    * Namespaces & File Bundling: 
+        - Use "namespace" code syntax to group code
+        - Per-file or bundled compilation is possible(less imports to manage)
+    * ES6 Imports/Exports Modules
+        - Use ES6 import/export
+        - Per-file compilation but single script import
+        - Bundling via third-party tools (e.g Webpack) is possible
+142. Working with Namespaces
+143. Organizing Files & Folders
+144. A Problem with Namespace Imports
+145. Important:Use Chrome or Firefox
+146. Using ES Modules
+147. Understanding various imports & Export Syntaxes
+148. How Does COde In Modules Execute?
+149. Wrap Up
+150. Useful Resources & Links
+    * [JavaScript Modules (Overview)](https://medium.com/computed-comparisons/commonjs-vs-amd-vs-requirejs-vs-es6-modules-2e814b114a0b)
+    * [More on ES Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
