@@ -281,3 +281,6 @@
 
 # Section 12: 3rd Party Libraries & Typescript
 161. Module Introduction
+162. Using Javascript(!) Libraries with TypeScript
+163. Using "declare" as a "Last Resort"
+164. No Types Needed: class-transformer
