@@ -260,3 +260,24 @@
 150. Useful Resources & Links
     * [JavaScript Modules (Overview)](https://medium.com/computed-comparisons/commonjs-vs-amd-vs-requirejs-vs-es6-modules-2e814b114a0b)
     * [More on ES Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
+
+# Section 11: Using Webpack with Typescript
+151. Module Introduction
+152. What is Webpack & Why do we need it?
+    * [Webpack](https://webpack.js.org/)
+    * Webpack is a Bundling & "Build Orchestration" Tool
+        - Code Bundles, less imports required
+        - Optimized(minified) code, less code to download
+        - More build steps can be added easily
+153. Installing Webpack & Important Dependencies
+    - CLI: npm install --save-dev webpack webpack-cli webpack-dev-server typescript ts-loader
+154. Adding Entry & Output Configuration
+155. Adding Typescript Support with the ts-loader Package
+156. Adjust a Production Workflow
+157. Finishing the Setup & Addinf webpack-dev-server
+158. Adding a Production Workflow
+159. Wrap Up
+160. Useful Resources & Links
+
+# Section 12: 3rd Party Libraries & Typescript
+161. Module Introduction
