@@ -284,3 +284,13 @@
 162. Using Javascript(!) Libraries with TypeScript
 163. Using "declare" as a "Last Resort"
 164. No Types Needed: class-transformer
+    * [class-transformer](https://github.com/typestack/class-transformer)
+165. TypeScript-embracing: class-validator
+    * [class-validator](https://github.com/typestack/class-validator#readme)
+166. Wrap Up
+167. Useful Resources & Links
+
+# Section 13: Build a "Select & Share a Place" App (Incl. Google Maps)
+168. Module Introduction
+169. Project Setup
+170. Setting Up a Google API Key
