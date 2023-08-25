@@ -293,4 +293,17 @@
 # Section 13: Build a "Select & Share a Place" App (Incl. Google Maps)
 168. Module Introduction
 169. Project Setup
-170. Setting Up a Google API Key
+170. Getting User Input
+171. Setting Up a Google API Key - !Important used Leaflet
+    * CLI:
+        - npm install --save leaflet
+        - npm i @types/leaflet
+        - npm install @types/geojson
+172. Using Axios to Fetch Coordinates for an Entered Address
+173. Rendering a Map with Google Maps (incl. Types!)
+    * Was used leaflet with a free geocoding API
+174. Working with Maps whithout Credit Card
+175. Useful Resources & Links
+
+# Section 14: React.js & Typescript
+176. Module Introduction
