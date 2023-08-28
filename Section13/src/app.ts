@@ -18,7 +18,6 @@ function searchAddressHandler(event: Event) {
   const enteredAddress = addressInput.value;
   console.log(enteredAddress);
 
-  // send this to Google's API
   axios.get(`https://geocode.maps.co/search?q=${encodeURI(enteredAddress)}`)
     .then(response => {
       console.log(response);
@@ -35,7 +34,4 @@ function searchAddressHandler(event: Event) {
 }
 
 form.addEventListener("submit", searchAddressHandler);
-
-
-//Leaflet 
 

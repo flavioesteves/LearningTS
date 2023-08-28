@@ -307,3 +307,16 @@
 
 # Section 14: React.js & Typescript
 176. Module Introduction
+177. Setting Up a React Typescript Work Together?
+178. How Do React + Typescript Work Together?
+179. Working with Props and Types for Props
+180. Getting User Input with "refs"
+181. Cross-Component Commmunication
+182. Working with State & Types
+183. Managing State Better
+184. More Props & State Work
+185. Adding Styling
+186. Types for other React Features(e.g Redux or Routing)
+187. Wrap Up
+188. Useful Resources & Links
+    * [https://react.dev/](https://react.dev/)
