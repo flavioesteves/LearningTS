@@ -320,3 +320,18 @@
 187. Wrap Up
 188. Useful Resources & Links
     * [https://react.dev/](https://react.dev/)
+
+# Section 15: Node.js + Express & Typescript
+189. Module Introduction
+190. Executing TypeScript Code with Node.js
+    * [https://typestrong.org/ts-node/](https://typestrong.org/ts-node/)
+191. Setting up a Project
+    * Dependencies: express, body-parser, nodemon
+192. Finished Setup & Working with Types (in Node + Express Apps)
+    * Types Dependencies: @types/node  @types/express
+193. Adding Middleware & Types
+194. Working with Controllers & Parsing Request Bodies
+195. More CRUD Operations
+196. Wrap Up
+197. Useful Resources & Links
+    * [https://nestjs.com/](https://nestjs.com/)
